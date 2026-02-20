@@ -13,7 +13,6 @@ describe('Minhas conversas (contato para adoção)', () => {
     cy.clearCookies()
 
     const timestamp = Date.now()
-    const email = `usuario${timestamp}@test.com`
 
     cy.visit('/cadastro')
     cy.get('input[name="name"]').type('Usuario')
